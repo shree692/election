@@ -1,0 +1,85 @@
+export const timelineData = [
+  { icon: '📢', date: 'T-6 Months', title: 'Election Announcement', desc: 'The Election Commission officially announces the election schedule, including dates for polling, nominations, and counting.' },
+  { icon: '📋', date: 'T-5 Months', title: 'Voter Roll Revision', desc: 'Citizens can update, correct, or add their names to the electoral roll. Voter ID cards are issued to first-time voters.' },
+  { icon: '🏅', date: 'T-3 Months', title: 'Candidate Nominations', desc: 'Eligible candidates file nomination papers with their respective returning officers. Deposits are submitted and scrutinised.' },
+  { icon: '📣', date: 'T-2 Months', title: 'Campaign Period Begins', desc: 'Approved candidates begin their campaigns — rallies, debates, and advertising. The Model Code of Conduct is enforced.' },
+  { icon: '🔇', date: 'T-48 Hours', title: 'Campaign Silence', desc: 'Campaigning ceases 48 hours before polling to allow voters to make undisturbed decisions.' },
+  { icon: '🗳️', date: 'Polling Day', title: 'Voting', desc: 'Registered voters visit their designated polling stations, verify identity, and cast their votes using EVMs or paper ballots.' },
+  { icon: '📊', date: 'Counting Day', title: 'Vote Counting', desc: 'Ballots are counted under strict supervision. Candidates, agents, and observers witness the process for transparency.' },
+  { icon: '🏆', date: 'Results Day', title: 'Results & Swearing-In', desc: 'Winners are declared, certificates issued, and the elected government is formed. New officials are sworn into office.' },
+];
+
+export const stepsData = {
+  voter: [
+    { title: 'Check Eligibility', desc: 'Must be 18+ years old and a citizen. Persons of unsound mind or convicted felons may be disqualified.' },
+    { title: 'Voter Registration', desc: 'Apply online at your Election Commission portal or visit a local registration centre with identity proof.' },
+    { title: 'Receive Voter ID', desc: 'An Elector Photo Identity Card (EPIC) is issued as proof of registration — keep it safe.' },
+    { title: 'Find Your Booth', desc: 'Use the official voter portal or helpline to locate your assigned polling station and booth number.' },
+    { title: 'Review Candidates', desc: 'Read manifesto summaries, attend debates, and research candidates standing in your constituency.' },
+    { title: 'Cast Your Vote', desc: 'Arrive at your polling station, verify your identity, receive a ballot/EVM token, and vote in secret.' },
+  ],
+  candidate: [
+    { title: 'Meet Eligibility Criteria', desc: 'Must be a citizen, at least 25 years old (Lok Sabha), and registered as a voter in the country.' },
+    { title: 'Choose a Party or Stand Independently', desc: 'Align with a registered political party or file as an independent candidate.' },
+    { title: 'File Nomination Papers', desc: 'Submit Form 2B to the Returning Officer along with the required security deposit.' },
+    { title: 'Scrutiny & Withdrawal', desc: 'Nominations are scrutinised; candidates may withdraw before the deadline if they change their mind.' },
+    { title: 'Run Your Campaign', desc: 'Hold rallies, door-to-door canvassing, and media outreach within spending limits set by the Commission.' },
+    { title: 'Polling & Results', desc: 'Vote yourself, monitor your polling agents, and await the officially declared result.' },
+  ],
+  observer: [
+    { title: 'Accreditation', desc: 'Apply to the Election Commission or an accredited international body to be an official election observer.' },
+    { title: 'Pre-Election Briefing', desc: 'Attend mandatory briefings on observer guidelines, neutrality rules, and reporting procedures.' },
+    { title: 'Monitor Campaign Period', desc: 'Track campaigning activities, spending, and compliance with the Model Code of Conduct.' },
+    { title: 'Observe Polling', desc: 'Visit polling stations to observe queue management, secrecy of vote, and EVM handling.' },
+    { title: 'Monitor Counting', desc: 'Observe the counting centre to verify that all ballots/EVM data are counted fairly.' },
+    { title: 'Submit Final Report', desc: 'File a comprehensive neutrality-based report to the accrediting body within the stipulated deadline.' },
+  ],
+};
+
+export const rolesData = [
+  { emoji: '🏛️', title: 'Election Commission', desc: 'The supreme body that plans, conducts, and supervises the entire election process with full constitutional authority.' },
+  { emoji: '🧑‍⚖️', title: 'Returning Officer', desc: 'District-level official responsible for overseeing polling in a constituency, accepting nominations, and declaring results.' },
+  { emoji: '👮', title: 'Polling Officer', desc: 'Manages a polling booth — verifies voters, operates EVMs, and ensures orderly conduct on Election Day.' },
+  { emoji: '🗳️', title: 'Voter', desc: 'Every eligible citizen who exercises the right to vote. The most powerful role in a democracy.' },
+  { emoji: '🏅', title: 'Candidate', desc: 'An individual who contests the election to represent a constituency in a legislative body.' },
+  { emoji: '👁️', title: 'Election Observer', desc: 'Monitors the process to ensure fairness — can be domestic civil-society members or international delegates.' },
+  { emoji: '📰', title: 'Media', desc: 'Accredited journalists who report on campaigns, polling, and results, keeping the public informed.' },
+  { emoji: '⚖️', title: 'Judiciary', desc: 'Courts hear election disputes, petitions, and enforce electoral law impartially and swiftly.' },
+];
+
+export const quizData = [
+  { id: 1, q: 'What is the minimum age to vote in most democracies?', opts: ['16', '21', '18', '25'], ans: 2, exp: 'In most countries, including India, the voting age is 18 years, established to balance youth participation and civic maturity.' },
+  { id: 2, q: 'What does EVM stand for?', opts: ['Electronic Voting Machine', 'Election Verification Module', 'Electoral Vote Monitor', 'Electronic Vote Manager'], ans: 0, exp: 'EVM stands for Electronic Voting Machine, used in Indian elections since the 1980s to reduce paper ballots and speed up counting.' },
+  { id: 3, q: 'Which body conducts general elections in India?', opts: ['Parliament of India', 'Supreme Court', 'Election Commission of India', 'Ministry of Home Affairs'], ans: 2, exp: 'The Election Commission of India (ECI) is a constitutionally established body that oversees elections independently.' },
+  { id: 4, q: 'What is the Model Code of Conduct?', opts: ['A code for how MPs behave in parliament', 'Guidelines candidates/parties must follow during elections', 'Rules for election observers', 'Voter registration manual'], ans: 1, exp: 'The Model Code of Conduct is a set of guidelines issued by the ECI that political parties and candidates must follow during the election period.' },
+  { id: 5, q: 'What is a constituency?', opts: ['A political party headquarters', 'A geographic area that elects one representative', 'The building where votes are counted', 'A voter ID card'], ans: 1, exp: 'A constituency is a defined geographic area whose registered voters elect a single representative to the legislature.' },
+  { id: 6, q: 'What is NOTA on an Indian ballot?', opts: ['Name of the Applicant', 'None of the Above', 'National Observer Tracking Agency', 'No Official Tally Allowed'], ans: 1, exp: 'NOTA means "None of the Above" — it allows voters to reject all candidates without spoiling their ballot.' },
+  { id: 7, q: 'How many hours before polling must election campaigns stop?', opts: ['24 hours', '12 hours', '48 hours', '72 hours'], ans: 2, exp: 'The Model Code of Conduct requires all campaigning to cease 48 hours before polling begins, giving voters quiet time to decide.' },
+  { id: 8, q: 'What is a By-Election?', opts: ['An election held every two years', 'An election held when a seat becomes vacant mid-term', 'A regional election', 'A referendum'], ans: 1, exp: 'A By-election is held to fill a vacant seat caused by death, resignation, or disqualification of a sitting member.' },
+  { id: 9, q: 'Which document proves voter registration in India?', opts: ['Passport', 'Aadhaar Card', 'EPIC – Voter ID Card', 'PAN Card'], ans: 2, exp: 'The Elector Photo Identity Card (EPIC), commonly called the Voter ID, is the official proof of voter registration in India.' },
+  { id: 10, q: 'Who counts the votes after polling day?', opts: ['The candidates themselves', 'Appointed counting staff under strict supervision', 'A computer AI system', 'State police'], ans: 1, exp: 'Votes are counted by specially appointed officials at designated counting centres, under the supervision of observers and candidate agents.' },
+];
+
+export const assistantKnowledge = [
+  { keys: ['register', 'registration', 'enrol', 'sign up', 'how do i vote'], topic: 'Voter Registration', reply: `**How to Register as a Voter:**\n\n1. **Check eligibility** – You must be 18+ and a citizen.\n2. **Visit the official portal** – In India, go to [voters.eci.gov.in](https://voters.eci.gov.in).\n3. **Fill Form 6** – For new voters registering for the first time.\n4. **Submit documents** – Age proof (birth certificate/passport) and address proof.\n5. **Receive your EPIC (Voter ID)** – Usually within 30 days.\n\nYou can also register offline at your nearest BLO (Booth Level Officer) office.` },
+  { keys: ['election day', 'polling day', 'voting day', 'cast my vote', 'what happens on election'], topic: 'Election Day', reply: `**On Election Day:**\n\n1. Bring your **Voter ID card (EPIC)** to your assigned polling booth.\n2. Your name will be checked against the **electoral roll**.\n3. Your finger is marked with **indelible ink** to prevent double voting.\n4. You\'ll be directed to an **EVM (Electronic Voting Machine)**.\n5. Press the button next to your chosen candidate.\n6. A **VVPAT slip** will briefly appear to confirm your vote.\n\n🗳️ The whole process usually takes under 5 minutes!` },
+  { keys: ['constituency', 'constituencies', 'what is a constituency'], topic: 'Constituency', reply: `**What is a Constituency?**\n\nA constituency is a geographic area represented by one elected official.\n\n- **Lok Sabha** (India) has **543 constituencies** — one MP per constituency.\n- **State Assemblies** have their own set of constituencies for MLAs.\n- Boundaries are drawn by the **Delimitation Commission** based on population.\n\nEvery voter belongs to exactly one constituency and votes for their local representative.` },
+  { keys: ['count', 'counting', 'tally', 'how are votes', 'vote counting'], topic: 'Vote Counting', reply: `**How Votes Are Counted:**\n\n1. After polling closes, **EVM control units** are sealed and transported to counting centres.\n2. On counting day, EVMs are opened in the presence of **candidates, their agents, and observers**.\n3. Results are displayed round-by-round for each polling station.\n4. **VVPAT slips** from 5 randomly selected booths per constituency are verified.\n5. The **Returning Officer** declares the winner once all rounds are complete.\n\n📊 The entire process is transparent and carefully supervised.` },
+  { keys: ['evm', 'electronic voting machine', 'vvpat'], topic: 'EVM & VVPAT', reply: `**About EVMs (Electronic Voting Machines):**\n\n- Introduced in India in **1982**, fully adopted by **2004**.\n- Consist of two units: **Ballot Unit** (voter side) and **Control Unit** (officer side).\n- Can store up to **2,000 votes** and last on a single battery for the full day.\n- Come with **VVPAT** (Voter Verifiable Paper Audit Trail) for transparency.\n- Are **standalone machines** — not connected to the internet, making them hack-proof.\n\n🔒 EVMs are kept in secure, double-locked strong rooms between elections.` },
+  { keys: ['nota', 'none of the above'], topic: 'NOTA', reply: `**What is NOTA?**\n\nNOTA stands for **"None of the Above"**.\n\n- Introduced in India after a **Supreme Court order in 2013**.\n- Allows voters to **reject all candidates** without spoiling their ballot.\n- The NOTA button is the **last option** on every EVM.\n- If NOTA gets the most votes, the candidate with the **next highest votes wins**.\n\n✅ It strengthens voter expression and holds parties accountable for fielding quality candidates.` },
+  { keys: ['candidate', 'stand for election', 'nominate', 'how to contest', 'become a candidate'], topic: 'Becoming a Candidate', reply: `**How to Become a Candidate:**\n\n1. **Meet eligibility** – Citizen, 25+ years (Lok Sabha), registered voter.\n2. **Choose affiliation** – Join a political party or stand as an independent.\n3. **File nomination** – Submit Form 2B to the Returning Officer with the security deposit (₹25,000 for LS).\n4. **Scrutiny** – The RO checks the nomination for validity.\n5. **Withdrawal period** – You can withdraw before the last date if needed.\n6. **Campaign** – Conduct campaigns within the EC's spending limits.\n7. **Polling & Results** – Await the officially declared result.` },
+  { keys: ['model code', 'code of conduct', 'mcc'], topic: 'Model Code of Conduct', reply: `**Model Code of Conduct (MCC):**\n\nThe MCC is issued by the **Election Commission of India** to ensure free and fair elections.\n\n**Key rules:**\n- No new government schemes that could influence voters.\n- No use of government machinery for campaigning.\n- No hate speech, communal appeals, or vote-for-cash deals.\n- All public meetings require prior permission from authorities.\n\n🔔 The MCC kicks in the moment the election schedule is announced and stays until results are declared.` },
+  { keys: ['observer', 'monitoring', 'international observer', 'election observer'], topic: 'Election Observers', reply: `**Election Observers:**\n\nObservers ensure the election is conducted fairly.\n\n**Types:**\n- **General Observers** – Monitor overall conduct of elections.\n- **Expenditure Observers** – Track candidate spending limits.\n- **Police Observers** – Monitor law and order.\n- **International Observers** – Invited by EC to report to global bodies.\n\nThey can inspect any polling station, counting centre, and campaign activity.` },
+  { keys: ['what is election', 'define election', 'election meaning', 'what is an election'], topic: 'What is an Election?', reply: `**What is an Election?**\n\nAn election is a formal democratic process by which **citizens choose their representatives** or decide on proposals through voting.\n\n**Key characteristics:**\n- 🗓️ Held at regular intervals (every 5 years in India for Lok Sabha)\n- 🏛️ Overseen by an independent Election Commission\n- 🔒 Secret ballot to protect voter freedom\n- ⚖️ Governed by strict laws and codes of conduct\n\nElections are the cornerstone of democracy — they ensure that power rests with the people.` },
+  { keys: ['by-election', 'by election', 'byelection', 'vacant seat'], topic: 'By-Election', reply: `**What is a By-Election?**\n\nA by-election (or bye-election) is held to fill a **vacant legislative seat** mid-term.\n\n**Common reasons for a vacancy:**\n- Death of the sitting member\n- Resignation from the seat\n- Disqualification by the court or EC\n\nBy-elections follow the same process as general elections, just for a single constituency.` },
+  { keys: ['voter id', 'epic', 'voter card', 'id proof'], topic: 'Voter ID Card', reply: `**The Voter ID Card (EPIC):**\n\nEPIC stands for **Elector Photo Identity Card**.\n\n- Issued by the **Election Commission of India**.\n- Required as identity proof at polling booths.\n- Contains: Name, Photo, Voter ID Number, Address, and Polling Booth details.\n\n**If you lost your Voter ID:**\nYou can download a digital copy from [voters.eci.gov.in](https://voters.eci.gov.in) using your registered mobile number.` },
+  { keys: ['postal ballot', 'absentee voting', 'vote from home'], topic: 'Postal Ballot', reply: `**Postal Ballot (Absentee Voting):**\n\nCertain voters can cast their vote **by post** if they can't visit a polling station.\n\n**Eligible categories:**\n- Armed forces personnel and their spouses\n- Government officials on election duty\n- Senior citizens (80+) and persons with disabilities (in some states)\n- People in preventive detention\n\nYou must apply for a postal ballot **before the deadline** set by the Election Commission.` },
+  { keys: ['how long', 'duration', 'campaign period', 'election period', 'how many days'], topic: 'Election Duration', reply: `**Election Timeline at a Glance:**\n\n| Phase | Duration |\n|---|---|\n| Announcement to Polling | ~4–6 weeks typically |\n| Campaign silence period | 48 hours before polling |\n| Counting after polling | Same day or next day |\n| Results to swearing-in | 2–4 weeks |` },
+];
+
+export function getAssistantReply(message) {
+  const normalized = message.toLowerCase();
+  const match = assistantKnowledge.find(item => item.keys.some(key => normalized.includes(key)));
+  if (match) return match.reply;
+  return `I couldn't find a precise answer, but here are some tips:\n\n- Try asking about voter registration, Election Day, EVMs, or the Model Code of Conduct.\n- You can also ask for the steps for voters, candidates, or observers.\n\nI\'m here to help!`;
+}
